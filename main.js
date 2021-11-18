@@ -3,15 +3,19 @@ const linksSocialMedia = {
   github: "DhonatanJoseildo",
   youtube: "UCDYUts6VhAoSB2MPtCXBOqA",
   facebook: "dhonatanjoseildo",
-  instagram: "dhonatan001",
-  twitter: "maykbrito"
+  instagram: "dhonatan001/",
+  twitter: "dhonjoseildo"
 }
 
 function changeSocialMediaLinks() {
   for (let li of socialLinks.children) {
     const social = li.getAttribute('class')
-
-    li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
+    if (social != 'youtube') {
+      li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
+    }else{
+      li.children[0].href = `https://${social}.com/channel/${linksSocialMedia[social]}`
+    }
+    
 
   }
 }
