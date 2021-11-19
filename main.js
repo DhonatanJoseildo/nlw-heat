@@ -34,7 +34,7 @@ function getGitHubProfileInfos() {
     userBio.textContent = data.bio
     userGitHub.href = data.html_url
     userPhoto.src = data.avatar_url
-    user.textContent = data.login
+    userLogin.textContent = data.login
   })
 }
 getGitHubProfileInfos()
