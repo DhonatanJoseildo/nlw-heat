@@ -19,6 +19,7 @@ main {
   width: 100vw;
   min-height: 812px;
   height: 100vh;
+  background-color: black;
 }
 .content {
   max-width: 250px;
@@ -77,4 +78,20 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+/* ====== @Media/ responsividade ==========*/
+
+@media (min-width:960px) {
+  main{
+    background: url(images/Desktop.svg) no-repeat center/cover;
+    background-color: black;
+    position: absolute;
+  }
+  .content{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.6vh;
+  }
 }
