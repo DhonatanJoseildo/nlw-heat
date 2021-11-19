@@ -82,6 +82,20 @@ ul {
 
 /* ====== @Media/ responsividade ==========*/
 
+@media (min-width:720px){
+  main{
+    background: url(images/Tablet.svg) no-repeat center/cover;
+    background-color: black;
+    position: absolute;
+  }
+  .content{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.6vh;
+  }
+}
+
 @media (min-width:960px) {
   main{
     background: url(images/Desktop.svg) no-repeat center/cover;
